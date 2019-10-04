@@ -1,0 +1,20 @@
+import React from 'react';
+import { useDarkMode } from '../hooks/useDarkMode';
+
+const Navbar = () => {
+  const [darkMode, setDarkMode] = useDarkMode(false);
+
+  return (
+    <nav className="navbar">
+      <h1>Players sprint</h1>
+      <div onClick={setDarkMode} className="dark-mode__toggle">
+        <div
+          onClick={setDarkMode}
+          className={darkMode ? 'toggle toggled' : 'toggle'}
+        />
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

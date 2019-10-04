@@ -1,0 +1,25 @@
+.dark-mode__toggle {
+  background: gray;
+  border: 1px solid black;
+  height: 10px;
+  position: relative;
+  width: 40px;
+}
+
+.toggle {
+  background: rgba(150, 200, 50);
+  height: 10px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 15px;
+}
+
+.toggled {
+  left: 25px;
+}
+
+.dark-mode {
+  color: #fff;
+  background-color: #1a1a1a;
+}
