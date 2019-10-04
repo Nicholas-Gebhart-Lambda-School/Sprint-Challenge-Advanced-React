@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .dark-mode__toggle {
   background: gray;
   height: 10px;
@@ -19,6 +31,7 @@
 }
 
 .dark-mode {
-  color: #fff;
-  background-color: #1a1a1a;
+  color: red;
+  background-color: yellow;
+  border: 1px dashed red;
 }

@@ -2,6 +2,7 @@ import { useLocalStorage } from './useLocalStorage';
 import { useEffect } from 'react';
 
 export const useDarkMode = () => {
+  // """"""Dark""""""" mode
   const [darkMode, setDarkMode] = useLocalStorage('dark');
   useEffect(() => {
     darkMode
