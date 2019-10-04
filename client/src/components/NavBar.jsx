@@ -6,8 +6,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1>Players sprint</h1>
-      <div onClick={setDarkMode} className="dark-mode__toggle">
+      <h1 data-testid="nav-title">Players sprint</h1>
+      <div
+        onClick={setDarkMode}
+        className="dark-mode__toggle"
+        data-testid="dark-button"
+      >
         <div
           onClick={setDarkMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
